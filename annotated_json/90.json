@@ -1,0 +1,42 @@
+{
+  "version": "4.5.7",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "corgi",
+      "points": [
+        [
+          1.4468085106382986,
+          33.191489361702125
+        ],
+        [
+          205.27659574468083,
+          114.04255319148936
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "corgi",
+      "points": [
+        [
+          18.893617021276583,
+          102.97872340425532
+        ],
+        [
+          188.68085106382978,
+          248.08510638297872
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "../images_input/90.jpg",
+  "imageData": null,
+  "imageHeight": 279,
+  "imageWidth": 236
+}

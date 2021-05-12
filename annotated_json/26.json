@@ -1,0 +1,74 @@
+{
+  "version": "4.5.7",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "corgi",
+      "points": [
+        [
+          13.086330935251794,
+          72.66187050359711
+        ],
+        [
+          72.07913669064747,
+          206.11510791366905
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "corgi",
+      "points": [
+        [
+          153.37410071942443,
+          67.98561151079136
+        ],
+        [
+          224.95683453237407,
+          195.68345323741005
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "corgi",
+      "points": [
+        [
+          122.43884892086331,
+          73.02158273381295
+        ],
+        [
+          165.24460431654674,
+          215.10791366906474
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "corgi",
+      "points": [
+        [
+          64.88489208633092,
+          67.62589928057554
+        ],
+        [
+          127.11510791366905,
+          204.31654676258992
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "../images_input/26.jpg",
+  "imageData": null,
+  "imageHeight": 236,
+  "imageWidth": 236
+}

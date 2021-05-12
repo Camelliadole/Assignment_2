@@ -1,0 +1,138 @@
+{
+  "version": "4.5.7",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "corgi",
+      "points": [
+        [
+          12.578475336322867,
+          202.2421524663677
+        ],
+        [
+          82.53363228699553,
+          291.47982062780267
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "corgi",
+      "points": [
+        [
+          85.22421524663676,
+          216.5919282511211
+        ],
+        [
+          144,
+          294
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "corgi",
+      "points": [
+        [
+          104.05829596412556,
+          145.2914798206278
+        ],
+        [
+          174.46188340807174,
+          217.48878923766816
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "corgi",
+      "points": [
+        [
+          172.66816143497758,
+          149.77578475336324
+        ],
+        [
+          223.3408071748879,
+          220.62780269058297
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "corgi",
+      "points": [
+        [
+          104.50672645739911,
+          82.95964125560538
+        ],
+        [
+          223.3408071748879,
+          144.39461883408072
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "corgi",
+      "points": [
+        [
+          83.4304932735426,
+          0.4484304932735426
+        ],
+        [
+          143.5201793721973,
+          76.23318385650224
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "corgi",
+      "points": [
+        [
+          134.1031390134529,
+          8.52017937219731
+        ],
+        [
+          186.12107623318386,
+          78.47533632286995
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "corgi",
+      "points": [
+        [
+          175.35874439461884,
+          0.8968609865470852
+        ],
+        [
+          221.54708520179372,
+          76.23318385650224
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "../images_input/28.jpg",
+  "imageData": null,
+  "imageHeight": 295,
+  "imageWidth": 236
+}

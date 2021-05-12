@@ -1,0 +1,26 @@
+{
+  "version": "4.5.7",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "corgi",
+      "points": [
+        [
+          1.3541666666666714,
+          52.60416666666667
+        ],
+        [
+          234.16666666666669,
+          289.0625
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "../images_input/74.jpg",
+  "imageData": null,
+  "imageHeight": 341,
+  "imageWidth": 236
+}
