@@ -2,6 +2,9 @@ from Augmentor import Pipeline
 import os
 from shutil import move, copy, rmtree
 import argparse
+from matplotlib import pyplot as plt
+import cv2 as cv
+from PIL import Image
 
 parser = argparse.ArgumentParser ()
 parser.add_argument('directory', help="The source directory")
@@ -25,6 +28,7 @@ parser.add_argument('--second', '-s',
                     help="zoom : max factor | rotate : max right rotation ")
 parser.add_argument('--sample', '-S', help="Set sample by a number of images you want to augment, set sample = 0 to excute all images",
                     default=0, type=int)
+parser.add_argument('--test', '-t', help="Show an example", action='store_true')
 args = parser.parse_args()
 
 
@@ -78,12 +82,59 @@ def augment (source_folder, method, sample, *args):
 def augmentation (source_folder, method, sample, *args):
     augment(source_folder, method, sample, *args)
 
+    if args[-1] == True:
+        method = f'{method}_test'
+        print (method)
+
     save_folder = copy_files(os.path.join(source_folder, 'output'), method)
     rename_files(save_folder, method)
 
 
+def get_original_image (file):
+    temp = file.split('.')
+    file = temp[0]
+    file_extension = temp[1]
+
+    file = file.split('_')
+    return f'{file[-1]}.{file_extension}', f'{file[0]}'
+
+
+def read_image (image_path):
+    image = cv.imread(image_path)
+    image = cv.cvtColor(image, cv.COLOR_BGR2RGB)
+
+    return image
+
+
+def plot_example (directory, method):
+    directory = directory.replace ('/', '')
+
+    folder_name = f'{directory}_{method}_test'
+    file = os.listdir(folder_name)[0]
+    original_file, original_folder = get_original_image(file)
+
+    image = read_image(f'{folder_name}/{file}')
+    original_image = read_image(f'{original_folder}/{original_file}')
+    rmtree(folder_name)
+
+    fig = plt.figure(figsize=(8, 8))
+    fig.add_subplot (2, 1, 1).set_title ('result')
+    plt.imshow(image)
+    fig.add_subplot (2, 1, 2).set_title ('original image')
+    plt.imshow (original_image)
+    plt.show()
+
+
+def augmentation_test (source_folder, method, sample, *args):
+    augmentation(source_folder, method, sample, *args)
+    plot_example(source_folder, method)
+
+
 def main():
-    augmentation(args.directory, args.method, args.sample, args.probability, args.first, args.second)
+    if not args.test:
+        augmentation(args.directory, args.method, args.sample, args.probability, args.first, args.second)
+    else:
+        augmentation_test (args.directory, args.method, 1, 1, args.first, args.second, True)
 
 
 if __name__ == "__main__":

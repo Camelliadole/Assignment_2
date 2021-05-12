@@ -11,6 +11,10 @@
     $ python3 augmentation images zoom -f 1.1 -s 1.5
     $ python3 augmentation images crop_random -S 10 -f 0.8
 
+  ### Test: Use `--test` or `-t` to see an example
+
+    $ python3 augmentation.py images/ crop_random -f 0.8 --test
+    $ python3 augmentation.py images/ flip_left_right -t
 
   ### Help: Use `-h` or `--help` to get more information.<br />
 
