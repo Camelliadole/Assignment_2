@@ -20,14 +20,14 @@ Thời gian: 23h59 thứ 4 ngày 12/05/2021
 
 Trịnh Phương Đông
 
-## 1. Data Augmentation
+## I. Data Augmentation
 
 - Đôi khi việc tìm kiếm dữ liệu khó khăn, ta chỉ có một tập dữ liệu giới hạn cho trước, vậy làm thế nào để train model hiệu quả, ta có thể dùng Data Augmentation.
 - Data Augmentation hay còn gọi là tăng cường dữ liệu khi tập dữ liệu còn ít cho việc training. Việc này sẽ tạo ra dữ liệu mới phục vụ cho việc training dựa vào dữ liệu cho trước.
 
-## 2. Một số kỹ thuật Augmentation phổ biến với ảnh
+## II. Một số kỹ thuật Augmentation phổ biến với ảnh
 
-Ở đây ta sử dụng Class `ImageDataGenerator` của Keras
+### 1.1 Sử dụng Class `ImageDataGenerator` của Keras
 
 > Chỉ sử dụng một hình ảnh làm mẫu, có thể thay đổi code để load toàn bộ data
 
@@ -95,7 +95,7 @@ Trịnh Phương Đông
 
 ![Alt text](Sample_Image_Keras/Zoom_out.png "Zoom")
 
-## 3. Chạy thử chương trình
+### 1.2 Chạy thử chương trình
 
 Chạy thử với đầu vào là 1 ảnh và đầu ra là 50 ảnh, sử dụng tất cả các phương thức trên một cách ngẫu nhiên.
 
@@ -110,3 +110,7 @@ Chạy thử với đầu vào là 1 ảnh và đầu ra là 50 ảnh, sử dụ
 > )_
 
 ![Alt text](Sample_Image_Keras/Example.png "Example")
+
+### 2.1 Sử dụng thư viện Albumentation
+
+(Đang tìm hiểu)
