@@ -1,11 +1,30 @@
-Assignment_2: 04/05/2021
-# ASSIGNMENT 2: IMAGE AUGMENTATION
-# Nhiệm vụ
-1. Tìm hiểu về image augmentation
-2. Các hàm để augment trong python (opencv, keras, pytorch, augmentor, albumentations, ...) chạy thử và show lại kết quả vào Readme
-3. Code 1 chương trình augment 1 tập data tùy chọn
-# Nộp
-Thời gian: 23h59 thứ 4 ngày 12/05/2021
-1. Code
-2. Folder data ban đầu và sau khi augment
-3. Readme về các hàm augment
+# Submit Assignment 2:
+
+  ## Manual: <br />
+  ### Syntax: <br />
+
+    $ python3 augmentation \images_directory \method --sample \sample --probability \probability --first \parameter_1 --second \parameter_2
+
+  ### Example: <br />
+
+    $ python3 augmentation images rotate --sample 10 -p 0.9 -f 10 -s 10
+    $ python3 augmentation images zoom -f 1.1 -s 1.5
+    $ python3 augmentation images crop_random -S 10 -f 0.8
+
+
+  ### Help: Use `-h` or `--help` to get more information.<br />
+
+    $ python3 augmentation -h
+    $ python3 augmentation --help
+
+   ### Remark: <br />
+   - `images_directory` : source directory
+   - `method` : {rotate,zoom,flip_left_right,flip_top_bottom,zoom_random,crop_random}
+   - `sample` : number of images (`sample` = 0: all images) default by 0
+   - `probabilty` : default by 0.6
+   - `parameter_1` : zoom : min factor | rotate : max left rotation | zoom_random : percentage area | crop_random : percentage area
+   - `parameter_2` : zoom : max factor | rotate : max right rotation
+
+ 
+  ## Results: <br />
+   >![system schema](/img.png)
