@@ -34,48 +34,64 @@ Trịnh Phương Đông
 1. **Flip** (Lật ảnh)
 
 - **Lật ảnh ngang**
+
+
 `ImageDataGenerator(horizontal_flip=True)`
 ![Alt text](Sample_Image/Flip_1.png "Flip")
 
 - **Lật ảnh dọc**
+
+
 `ImageDataGenerator(vertical_flip=True)`
 ![Alt text](Sample_Image/Flip_2.png "Flip")
 
 2. **Rotation** (Xoay ảnh)
 
 - **Xoay ảnh ngẫu nhiên một góc trong khoảng 0 đến 90 độ**
+
+
 `ImageDataGenerator(rotation_range=90)`
 ![Alt text](Sample_Image/Rotation.png "Rotation")
 
 3. **Shift** (Chuyển vị trí)
 
 - **Dịch ảnh ngang một khoảng ngẫu nhiên từ 0 đến 80 đơn vị**
+
+
 `ImageDataGenerator(width_shift_range=80)`
 ![Alt text](Sample_Image/Width.png "Width")
 
 - **Dịch ảnh dọc một khoảng ngẫu nhiên từ 0 đến 80 đơn vị**
+
+
 `ImageDataGenerator(height_shift_range=80)`
 ![Alt text](Sample_Image/Height.png "Height")
 
 4. **Brightness** (Tăng giảm độ sáng)
 
 - **Giảm độ sáng**
+
+
 `ImageDataGenerator(brightness_range=[0.2,1.0])`
 ![Alt text](Sample_Image/Bright_1.png "Darker")
 
 - **Tăng độ sáng**
 
 
-  `ImageDataGenerator(brightness_range=[1.0,1.8])`
-  ![Alt text](Sample_Image/Bright_2.png "Lighter")
+`ImageDataGenerator(brightness_range=[1.0,1.8])`
+![Alt text](Sample_Image/Bright_2.png "Lighter")
 
 5. **Zoom** (Phóng to hoặc thu nhỏ)
 
 - **Zoom in**
+
+
 `ImageDataGenerator(ImageDataGenerator(zoom_range=[0.5, 1.0]))`
 ![Alt text](Sample_Image/Zoom_in.png "Zoom")
 
 - **Zoom out**
+
+
 `ImageDataGenerator(ImageDataGenerator(zoom_range=[1.0, 1.5]))`
 ![Alt text](Sample_Image/Zoom_out.png "Zoom")
 
